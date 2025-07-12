@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9A4A69872E220816001AADBD /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 9A4A69862E220816001AADBD /* ArgumentParser */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		9A4A69792E220808001AADBD /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A4A69872E220816001AADBD /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = loggins;
 			packageProductDependencies = (
+				9A4A69862E220816001AADBD /* ArgumentParser */,
 			);
 			productName = loggins;
 			productReference = 9A4A697B2E220808001AADBD /* loggins */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = 9A4A69722E220808001AADBD;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9A4A69852E220816001AADBD /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9A4A697C2E220808001AADBD /* Products */;
 			projectDirPath = "";
@@ -295,6 +304,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A4A69852E220816001AADBD /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A4A69862E220816001AADBD /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A4A69852E220816001AADBD /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9A4A69732E220808001AADBD /* Project object */;
 }
