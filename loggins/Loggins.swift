@@ -12,7 +12,7 @@ import OSLog
 @main
 struct Loggins: ParsableCommand {
     static let configuration = CommandConfiguration(
-        abstract: "A logger for Apple's unified logging system.",
+        abstract: "A tool for writing messages to Apple's unified logging system.",
         version: "0.1.1"
     )
 
@@ -22,10 +22,10 @@ struct Loggins: ParsableCommand {
     @Option(name: [.customShort("l"), .long], help: "Log level. Options: debug, info, notice, warning, error, critical")
     var level: String = "info"
 
-    @Option(help: "A string that identifies the subsystem that's performing logging (e.g. com.example.tool)")
+    @Option(help: "Subsystem identifier (e.g. com.example.tool)")
     var subsystem: String?
 
-    @Option(help: "A string that categorizes the message (e.g. startup, network)")
+    @Option(help: "Log category (e.g. startup, network)")
     var category: String?
 
     @Option(help: "Privacy setting for message. Options: public, private")

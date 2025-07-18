@@ -1,38 +1,34 @@
-# loggins
-
-_A command-line logger for Apple's unified logging system (OSLog)._
-
-`loggins` is a lightweight CLI wrapper around Swift’s [`Logger`](https://developer.apple.com/documentation/os/logger) API, designed for quick, structured logging from scripts, terminals, and automation tools. It’s a spiritual successor to the `logger` command—rewritten for the modern Console.
-
-## Usage
+# [Loggins](https://www.youtube.com/watch?v=HjPpHcgnDfI)
 
 ```sh
-loggins "Danger zone entered"
+OVERVIEW: A tool for writing messages to Apple's unified logging system.
+
+USAGE: loggins <message> [--level <level>] [--subsystem <subsystem>] [--category <category>] [--privacy <privacy>]
+
+ARGUMENTS:
+  <message>               The message to log.
+
+OPTIONS:
+  -l, --level <level>     Log level. Options: debug, info, notice, warning,
+                          error, critical (default: info)
+  --subsystem <subsystem> Subsystem identifier (e.g. com.example.tool)
+  --category <category>   Log category (e.g. startup, network)
+  --privacy <privacy>     Privacy setting for message. Options: public, private
+                          (default: public)
+  --version               Show the version.
+  -h, --help              Show help information.
 ```
+
+## Examples
 
 ```sh
-loggins -l error --subsystem com.example.tool --category startup "This is it"
+loggins "Highway to the danger zone"
+loggins -l warning "This is it"
+loggins -l error --privacy private "Meet me halfway"
+loggins --subsystem com.loggins.tracks --category footloose "Cut loose"
+loggins -l notice --category playlist "Playing with the boys"
 ```
-
-```sh
-loggins -l debug --category network --privacy private "Footloose from the firewall"
-```
-
-## Flags
-
-| Flag               | Description                                                      |
-|--------------------|------------------------------------------------------------------|
-| `<message>`        | The message to log (required).                                   |
-| `-l, --level`      | Log level: `debug`, `info`, `notice`, `warning`, `error`, `critical`. Defaults to `info`. |
-| `--subsystem`      | Optional subsystem identifier (e.g. `com.app.service`).          |
-| `--category`       | Optional category (e.g. `startup`, `network`).                   |
-| `--privacy`        | `public` (default) or `private`, for visibility control.         |
-
-## Why?
-
-Apple’s unified logging system is structured, performant, and secure—but logging via CLI tools hasn’t kept up. `loggins` brings Swift-native logging to the command line, using familiar options with sane defaults.
 
 ## See Also
-
-- [Apple's Logger API](https://developer.apple.com/documentation/os/logger)
-- [`OSLogPrivacy`](https://developer.apple.com/documentation/os/oslogprivacy)
+- [Final Space](https://archive.org/details/final-space_202209)
+- [The Final Chapter](https://finalspaceends.com)
