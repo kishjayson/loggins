@@ -1,4 +1,8 @@
-# [Loggins](https://www.youtube.com/watch?v=HjPpHcgnDfI)
+# Loggins
+
+[Loggins](https://www.youtube.com/watch?v=HjPpHcgnDfI) is a lightweight CLI wrapper around the Swift [Logger API](https://developer.apple.com/documentation/os/logger), designed for quick, structured logging from scripts, terminals, and automation tools. It’s a spiritual successor to the `logger` command—rewritten for the modern Console.
+
+## Usage
 
 ```sh
 OVERVIEW: A tool for writing messages to Apple's unified logging system.
