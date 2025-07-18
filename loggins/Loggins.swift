@@ -13,22 +13,22 @@ import OSLog
 struct Loggins: ParsableCommand {
     static let configuration = CommandConfiguration(
         abstract: "A logger for Apple's unified logging system.",
-        version: "0.1.0"
+        version: "0.1.1"
     )
 
     @Argument(help: "The message to log.")
     var message: String
 
-    @Option(name: [.customShort("l"), .long], help: "The log level for the message. [default: info]\nValues: debug, info, notice, warning, error, critical")
+    @Option(name: [.customShort("l"), .long], help: "Log level. Options: debug, info, notice, warning, error, critical")
     var level: String = "info"
 
-    @Option(help: "Optional log subsystem (e.g. com.example.tool)")
+    @Option(help: "A string that identifies the subsystem that's performing logging (e.g. com.example.tool)")
     var subsystem: String?
 
-    @Option(help: "Optional log category (e.g. startup, network)")
+    @Option(help: "A string that categorizes the message (e.g. startup, network)")
     var category: String?
 
-    @Option(help: "Privacy level for the log message. [default: public]\nValues: public, private")
+    @Option(help: "Privacy setting for message. Options: public, private")
     var privacy: String = "public"
 
     func run() throws {
