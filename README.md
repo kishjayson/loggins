@@ -19,16 +19,6 @@ OPTIONS:
   -h, --help              Show help information.
 ```
 
-## Examples
-
-```sh
-loggins "Highway to the danger zone"
-loggins --level warning "This is it"
-loggins --level error --privacy private "Meet me halfway"
-loggins --subsystem com.loggins.tracks --category footloose "Cut loose"
-loggins --level notice --category playlist "Playing with the boys"
-```
-
 ## See Also
 - [Final Space](https://archive.org/details/final-space_202209)
 - [The Final Chapter](https://finalspaceends.com)
