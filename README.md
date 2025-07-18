@@ -1,4 +1,4 @@
-# [Loggins](https://www.youtube.com/watch?v=HjPpHcgnDfI)
+# Loggins
 
 ```sh
 OVERVIEW: A tool for writing messages to Apple's unified logging system.
@@ -18,7 +18,3 @@ OPTIONS:
   --version               Show the version.
   -h, --help              Show help information.
 ```
-
-## See Also
-- [Final Space](https://archive.org/details/final-space_202209)
-- [The Final Chapter](https://finalspaceends.com)
