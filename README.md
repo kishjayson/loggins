@@ -1,8 +1,4 @@
-# Loggins
-
-[Loggins](https://www.youtube.com/watch?v=HjPpHcgnDfI) is a lightweight CLI wrapper around the Swift [Logger API](https://developer.apple.com/documentation/os/logger), designed for quick, structured logging from scripts, terminals, and automation tools. It’s a spiritual successor to the `logger` command—rewritten for the modern Console.
-
-## Usage
+# [Loggins](https://www.youtube.com/watch?v=HjPpHcgnDfI)
 
 ```sh
 OVERVIEW: A tool for writing messages to Apple's unified logging system.
@@ -27,10 +23,10 @@ OPTIONS:
 
 ```sh
 loggins "Highway to the danger zone"
-loggins -l warning "This is it"
-loggins -l error --privacy private "Meet me halfway"
+loggins --level warning "This is it"
+loggins --level error --privacy private "Meet me halfway"
 loggins --subsystem com.loggins.tracks --category footloose "Cut loose"
-loggins -l notice --category playlist "Playing with the boys"
+loggins --level notice --category playlist "Playing with the boys"
 ```
 
 ## See Also
