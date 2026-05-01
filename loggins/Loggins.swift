@@ -28,9 +28,6 @@ struct Loggins: ParsableCommand {
     @Option(help: "Log category (e.g. startup, network)")
     var category: String?
 
-    @Option(help: "Privacy setting for message. Options: public, private")
-    var privacy: String = "public"
-
     func run() throws {
         let logger = makeLogger()
         log(level: level, message: message, logger: logger)
@@ -49,38 +46,19 @@ struct Loggins: ParsableCommand {
     }
 
     private func log(level: String, message: String, logger: Logger) {
-        switch privacy.lowercased() {
-        case "private":
-            switch level.lowercased() {
-            case "debug":
-                logger.debug("\(message, privacy: .private)")
-            case "notice":
-                logger.notice("\(message, privacy: .private)")
-            case "warning":
-                logger.warning("\(message, privacy: .private)")
-            case "error":
-                logger.error("\(message, privacy: .private)")
-            case "critical":
-                logger.critical("\(message, privacy: .private)")
-            default:
-                logger.info("\(message, privacy: .private)")
-            }
-
+        switch level.lowercased() {
+        case "debug":
+            logger.debug("\(message, privacy: .public)")
+        case "notice":
+            logger.notice("\(message, privacy: .public)")
+        case "warning":
+            logger.warning("\(message, privacy: .public)")
+        case "error":
+            logger.error("\(message, privacy: .public)")
+        case "critical":
+            logger.critical("\(message, privacy: .public)")
         default:
-            switch level.lowercased() {
-            case "debug":
-                logger.debug("\(message, privacy: .public)")
-            case "notice":
-                logger.notice("\(message, privacy: .public)")
-            case "warning":
-                logger.warning("\(message, privacy: .public)")
-            case "error":
-                logger.error("\(message, privacy: .public)")
-            case "critical":
-                logger.critical("\(message, privacy: .public)")
-            default:
-                logger.info("\(message, privacy: .public)")
-            }
+            logger.info("\(message, privacy: .public)")
         }
     }
 }
