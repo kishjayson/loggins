@@ -19,6 +19,5 @@ OPTIONS:
 ```
 
 ### Output
-```
-[PLACEHOLDER]
-```
+
+![loggins](https://macplus.solutions/images/loggins.png)
