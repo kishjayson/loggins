@@ -29,11 +29,11 @@ struct Loggins: ParsableCommand {
     var category: String?
 
     func run() throws {
-        let logger = makeLogger()
-        log(level: level, message: message, logger: logger)
+        let logger = configuredLogger()
+        writeMessage(level: level, message: message, using: logger)
     }
 
-    private func makeLogger() -> Logger {
+    private func configuredLogger() -> Logger {
         if let subsystem = subsystem, let category = category {
             return Logger(subsystem: subsystem, category: category)
         } else if let subsystem = subsystem {
@@ -45,7 +45,7 @@ struct Loggins: ParsableCommand {
         }
     }
 
-    private func log(level: String, message: String, logger: Logger) {
+    private func writeMessage(level: String, message: String, using logger: Logger) {
         switch level.lowercased() {
         case "debug":
             logger.debug("\(message, privacy: .public)")
