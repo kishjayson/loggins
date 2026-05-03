@@ -1,6 +1,7 @@
 # Loggins
 
-```sh
+### Usage
+```
 OVERVIEW: A tool for writing messages to Apple's unified logging system.
 
 USAGE: loggins <message> [--level <level>] [--subsystem <subsystem>] [--category <category>]
@@ -15,4 +16,9 @@ OPTIONS:
   --category <category>   Log category (e.g. startup, network)
   --version               Show the version.
   -h, --help              Show help information.
+```
+
+### Output
+```
+[PLACEHOLDER]
 ```
