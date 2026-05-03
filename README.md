@@ -17,7 +17,3 @@ OPTIONS:
   --version               Show the version.
   -h, --help              Show help information.
 ```
-
-### Output
-
-![loggins](https://macplus.solutions/images/loggins.png)
