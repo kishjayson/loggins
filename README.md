@@ -1,5 +1,7 @@
 # Loggins
 
+Swift CLI for writing to Apple’s unified logging system, designed for clarity and predictable output.
+
 ### Usage
 ```
 OVERVIEW: A tool for writing messages to Apple's unified logging system.
