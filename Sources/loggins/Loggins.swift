@@ -12,7 +12,7 @@ import OSLog
 @main
 struct Loggins: ParsableCommand {
     static let configuration = CommandConfiguration(
-        abstract: "A tool for writing messages to Apple's unified logging system.",
+        abstract: "A tool for sending structured messages to Apple’s unified logging system.",
         version: "3.1"
     )
 
