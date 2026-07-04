@@ -1,6 +1,6 @@
 # Loggins
 
-Loggins is a Swift command-line tool for writing messages to Apple's unified logging system.
+Loggins is a Swift command-line tool for sending structured messages to Apple’s unified logging system.
 
 ## Install
 
@@ -18,7 +18,7 @@ loggins "Call this from your own scripts."
 ## Help
 
 ```text
-OVERVIEW: A tool for writing messages to Apple's unified logging system.
+OVERVIEW: A tool for sending structured messages to Apple’s unified logging system.
 
 USAGE: loggins <message> [--level <level>] [--subsystem <subsystem>] [--category <category>]
 
