@@ -11,12 +11,6 @@ install .build/release/loggins /usr/local/bin/loggins
 
 ## Use
 
-```sh
-loggins "Call this from your own scripts."
-```
-
-## Help
-
 ```text
 OVERVIEW: A tool for sending structured messages to Apple’s unified logging system.
 
