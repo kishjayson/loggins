@@ -2,13 +2,6 @@
 
 Loggins is a Swift command-line tool for sending structured messages to Apple’s unified logging system.
 
-## Install
-
-```sh
-swift build -c release
-install .build/release/loggins /usr/local/bin/loggins
-```
-
 ## Use
 
 ```text
@@ -26,4 +19,11 @@ OPTIONS:
   --category <category>   Log category, such as startup or network.
   --version               Show the version.
   -h, --help              Show help information.
+```
+
+## Install
+
+```sh
+swift build -c release
+install .build/release/loggins /usr/local/bin/loggins
 ```
